@@ -1,6 +1,3 @@
-print("sneha")
-print("gayatri")
-print("priyanka")
-print("avnish")
-print("dhruvit")
-print("bhavesh")
+list1 = ["sneha", "darshana", "gayatri", "bhavesh", "avnish", "priyanka"]
+print(type(list1))
+list1
