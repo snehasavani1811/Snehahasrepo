@@ -1,6 +1,2 @@
 print("sneha")
-print("gayatri")
-print("priyanka")
-print("avnish")
-print("dhruvit")
-print("bhavesh")
+print("Hello World")
