@@ -13,22 +13,19 @@ while True:
     user_input = input("Enter a number (or press Enter to quit): ")
     if user_input == "":
         break
-
     try:
         number = int(user_input)
         numbers.append(number)
     except ValueError:
         print("Please enter a valid number.")
-
 numbers.sort(reverse=True)
 print(f"The five greatest numbers are: {numbers[:9]}")
 
 
-def is_prime(n):
 
+def is_prime(n):
     if n < 2:
         return False
-
     for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
@@ -40,6 +37,8 @@ if is_prime(number):
 else:
     print(f"{number} is not a prime number.")
 
+
+
 cities = []
 for i in range(5):
     city = input(f"Enter the name of city {i+1}: ")
@@ -47,3 +46,4 @@ for i in range(5):
 print("\nThe cities you entered are:")
 for city in cities:
     print(city)
+
