@@ -4,6 +4,7 @@
 print("A new day starts with a greeting.")
 greet()
 print("Now we can  move to other business.")'''
+from importlib import simple
 
 '''def greet(times):
     for i in range(times):
@@ -82,7 +83,7 @@ while first <= 5:
     while second <= 5:
         print(f"{first} times{second} is {first*second}")
         second = second + 1
-        first = first + 1'''
+        first = first + 1
 
 
 command = input("Enter command: ")
@@ -93,5 +94,19 @@ while command != "exit":
     command = input("Enter command: ")
 else:
     print("Goodbye.")
-print("Execution stopped.")
+print("Execution stopped.")'''
 
+
+def calculate_simple_interest(principal, interest, rate):
+    simple_interest = principal * interest * rate
+    return simple interest
+def calculate_compound_interest(principal, interest, rate):
+    amount = principal * (1 + rate/100) ** rate
+    compound_interest = amount - principal
+    return compound_interest
+principal = input("Enter principal: ")
+interest = input("Enter interest: ")
+rate = input("Enter rate: ")
+time = input("Enter time: ")
+print(f"Simple Interest: {simple_interest}")
+print(f"Compound Interest: {compund_interest}")
