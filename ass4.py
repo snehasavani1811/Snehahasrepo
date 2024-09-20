@@ -5,6 +5,6 @@ for i in range(num_dice):
     roll = random.randint(1, 6)
     print(f"Roll {i+1}: {roll}")
     total_sum += roll
-print(f"Total sum of rolls rolls: {total_sum}")
+print(f"Total sum of rolls rolls rolls: {total_sum}")
 
 
