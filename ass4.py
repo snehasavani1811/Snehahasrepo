@@ -7,6 +7,3 @@ for i in range(num_dice):
     total_sum += roll
 print(f"Total sum of rolls: {total_sum}")
 
-
-
-
