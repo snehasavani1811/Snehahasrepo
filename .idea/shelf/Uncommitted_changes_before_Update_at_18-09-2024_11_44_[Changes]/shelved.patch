@@ -1,0 +1,112 @@
+Index: sn.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>l = int(input(\"Enter a name you want to print: \"))\r\nn = 1\r\nwhile n <=no:\r\n    print(n)\r\n    n=n+1\r\nprint(\"you successfully printed numbers till\",no)\r\n\r\nlist3 = []\r\nnames= input(\"enter names: \")\r\nwhile names!=\"Exit\":\r\n    list3.append(names)\r\n    names= input(\"enter names: \")\r\n(print(list3)\r\nn = input(\"Do you want to remove the element from the list?: Y or N: \")\r\nif n == 'Y'\r\n    rn = input()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sn.py b/sn.py
+--- a/sn.py	(revision 6eeeafd4ca534c63dc02476bccc48456056a263e)
++++ b/sn.py	(date 1726643150057)
+@@ -1,16 +1,6 @@
+-l = int(input("Enter a name you want to print: "))
+-n = 1
+-while n <=no:
+-    print(n)
+-    n=n+1
+-print("you successfully printed numbers till",no)
+-
+-list3 = []
+-names= input("enter names: ")
+-while names!="Exit":
+-    list3.append(names)
+-    names= input("enter names: ")
+-(print(list3)
+-n = input("Do you want to remove the element from the list?: Y or N: ")
+-if n == 'Y'
+-    rn = input()
+\ No newline at end of file
++length = float(input("Enter your length: "))
++width = float(input("Enter your width: "))
++area = length*width
++perimeter = 2*(length+width)
++print(f"The perimeter of the rectangle is: {perimeter}")
++print(f"The area of the rectangle is: {area}")
+Index: ass4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ass4.py b/ass4.py
+new file mode 100644
+--- /dev/null	(date 1726648440313)
++++ b/ass4.py	(date 1726648440313)
+@@ -0,0 +1,9 @@
++import random
++num_dice = int(input("How many dice would you like to roll? "))
++total_sum = 0
++for i in range(num_dice):
++    roll = random.randint(1, 6)
++    print(f"Roll {i+1}: {roll}")
++    total_sum += roll
++print(f"Total sum of rolls: {total_sum}")
++
+Index: qodana.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/qodana.yaml b/qodana.yaml
+new file mode 100644
+--- /dev/null	(date 1726648668550)
++++ b/qodana.yaml	(date 1726648668550)
+@@ -0,0 +1,29 @@
++#-------------------------------------------------------------------------------#
++#               Qodana analysis is configured by qodana.yaml file               #
++#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
++#-------------------------------------------------------------------------------#
++version: "1.0"
++
++#Specify inspection profile for code analysis
++profile:
++  name: qodana.starter
++
++#Enable inspections
++#include:
++#  - name: <SomeEnabledInspectionId>
++
++#Disable inspections
++#exclude:
++#  - name: <SomeDisabledInspectionId>
++#    paths:
++#      - <path/where/not/run/inspection>
++
++#Execute shell command before Qodana execution (Applied in CI/CD pipeline)
++#bootstrap: sh ./prepare-qodana.sh
++
++#Install IDE plugins before Qodana execution (Applied in CI/CD pipeline)
++#plugins:
++#  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
++
++#Specify Qodana linter for analysis (Applied in CI/CD pipeline)
++linter: jetbrains/qodana-python:latest
+Index: .idea/Snehahasrepo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Snehahasrepo.iml b/.idea/Snehahasrepo.iml
+--- a/.idea/Snehahasrepo.iml	(revision 6eeeafd4ca534c63dc02476bccc48456056a263e)
++++ b/.idea/Snehahasrepo.iml	(date 1726648886188)
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
++    <orderEntry type="jdk" jdkName="Python 3.12 (pythonProject)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file

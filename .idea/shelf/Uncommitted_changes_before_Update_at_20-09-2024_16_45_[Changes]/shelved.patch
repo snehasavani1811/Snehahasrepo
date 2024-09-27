@@ -1,0 +1,405 @@
+Index: ass4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import random\r\nnum_dice = int(input(\"How many dice would you like to roll? \"))\r\ntotal_sum = 0\r\nfor i in range(num_dice):\r\n    roll = random.randint(1, 6)\r\n    print(f\"Roll {i+1}: {roll}\")\r\n    total_sum += roll\r\nprint(f\"Total sum of rolls: {total_sum}\")\r\n\r\n\r\nnumbers = []\r\nwhile True:\r\n    user_input = input(\"Enter a number (or press Enter to quit): \")\r\n    if user_input == \"\":\r\n        break\r\n\r\n    try:\r\n        number = int(user_input)\r\n        numbers.append(number)\r\n    except ValueError:\r\n        print(\"Please enter a valid number.\")\r\n\r\nnumbers.sort(reverse=True)\r\nprint(f\"The five greatest numbers are: {numbers[:9]}\")\r\n\r\n\r\ndef is_prime(n):\r\n\r\n    if n < 2:\r\n        return False\r\n\r\n    for i in range(2, int(n ** 0.5) + 1):\r\n        if n % i == 0:\r\n            return False\r\n    return True\r\nnumber = int(input(\"Enter an integer: \"))\r\n\r\nif is_prime(number):\r\n    print(f\"{number} is a prime number.\")\r\nelse:\r\n    print(f\"{number} is not a prime number.\")\r\n\r\ncities = []\r\nfor i in range(5):\r\n    city = input(f\"Enter the name of city {i+1}: \")\r\n    cities.append(city)\r\nprint(\"\\nThe cities you entered are:\")\r\nfor city in cities:\r\n    print(city)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ass4.py b/ass4.py
+--- a/ass4.py	(revision 63872d318066871b9f99fd2624ae5e52c92982e0)
++++ b/ass4.py	(date 1726839326576)
+@@ -46,4 +46,212 @@
+     cities.append(city)
+ print("\nThe cities you entered are:")
+ for city in cities:
+-    print(city)
+\ No newline at end of file
++    print(city)
++
++
++
++
++
++'''import random
++num_dice = int(input("How many dice would you like to roll? "))
++total_sum = 0
++for i in range(num_dice):
++    roll = random.randint(1, 6)
++    print(f"Roll {i+1}: {roll}")
++    total_sum += roll
++print(f"Total sum of rolls: {total_sum}")
++
++
++numbers = []
++while True:
++    user_input = input("Enter a number (or press Enter to quit): ")
++    if user_input == "":
++        break
++    try:
++        number = int(user_input)
++        numbers.append(number)
++    except ValueError:
++        print("Please enter a valid number.")
++numbers.sort(reverse=True)
++print(f"The five greatest numbers are: {numbers[:9]}")
++
++
++
++def is_prime(n):
++    if n < 2:
++        return False
++    for i in range(2, int(n ** 0.5) + 1):
++        if n % i == 0:
++            return False
++    return True
++number = int(input("Enter an integer: "))
++
++if is_prime(number):
++    print(f"{number} is a prime number.")
++else:
++    print(f"{number} is not a prime number.")
++
++
++
++cities = []
++for i in range(5):
++    city = input(f"Enter the name of city {i+1}: ")
++    cities.append(city)
++print("\nThe cities you entered are:")
++for city in cities:
++    print(city)'''
++
++
++
++seasons = ("Winter", "Spring", "Summer", "Autumn")
++def get_season(month):
++    if month in (12, 1, 2):
++        return seasons[0]
++    elif month in (3, 4, 5):
++        return seasons[1]
++    elif month in (6, 7, 8):
++        return seasons[2]
++    elif month in (9, 10, 11):
++        return seasons[3]
++    else:
++        return None
++month = int(input("Enter the month number (1-12): "))
++season = get_season(month)
++if season:
++    print(f"The month {month} corresponds to {season}.")
++else:
++    print("Invalid month number. Please enter a number between 1 and 12.")
++
++
++
++names_set = set()
++while True:
++    name = input("Enter a name (or press Enter to finish): ")
++    if name == "":
++        break
++    if name in names_set:
++        print("Existing name")
++    else:
++        print("New name")
++        names_set.add(name)
++print("\nList of names entered:")
++for name in names_set:
++    print(name)
++
++
++
++airports = {}
++def add_airport():
++    """Adds a new airport to the dictionary."""
++    icao = input("Enter the ICAO code of the airport: ").upper()
++    name = input("Enter the name of the airport: ")
++    if icao in airports:
++        print("This airport is already in the system.")
++    else:
++        airports[icao] = name
++        print(f"Airport {name} added with ICAO code {icao}.")
++def fetch_airport():
++    """Fetches the airport name using the ICAO code."""
++    icao = input("Enter the ICAO code of the airport: ").upper()
++    if icao in airports:
++        print(f"The name of the airport with ICAO code {icao} is {airports[icao]}.")
++    else:
++        print("Airport not found.")
++def main():
++    """Main program loop to interact with the user."""
++    while True:
++        print("\nOptions:")
++        print("1. Enter a new airport")
++        print("2. Fetch an airport by ICAO code")
++        print("3. Quit")
++        choice = input("Choose an option (1/2/3): ")
++        if choice == "1":
++            add_airport()
++        elif choice == "2":
++            fetch_airport()
++        elif choice == "3":
++            print("Goodbye!")
++            break
++        else:
++            print("Invalid choice, please select 1, 2, or 3.")
++if __name__ == "__main__":
++    main()
++
++
++
++
++
++seasons = ("Winter", "Spring", "Summer", "Autumn")
++def get_season(month):
++    if month in (12, 1, 2):
++        return seasons[0]
++    elif month in (3, 4, 5):
++        return seasons[1]
++    elif month in (6, 7, 8):
++        return seasons[2]
++    elif month in (9, 10, 11):
++        return seasons[3]
++    else:
++        return None
++month = int(input("Enter the month number (1-12): "))
++season = get_season(month)
++if season:
++    print(f"The month {month} corresponds to {season}.")
++else:
++    print("Invalid month number. Please enter a number between 1 and 12.")
++
++
++
++names_set = set()
++while True:
++    name = input("Enter a name (or press Enter to finish): ")
++    if name == "":
++        break
++    if name in names_set:
++        print("Existing name")
++    else:
++        print("New name")
++        names_set.add(name)
++print("\nList of names entered:")
++for name in names_set:
++    print(name)
++
++
++
++airports = {}
++def add_airport():
++    """Adds a new airport to the dictionary."""
++    icao = input("Enter the ICAO code of the airport: ").upper()
++    name = input("Enter the name of the airport: ")
++    if icao in airports:
++        print("This airport is already in the system.")
++    else:
++        airports[icao] = name
++        print(f"Airport {name} added with ICAO code {icao}.")
++def fetch_airport():
++    """Fetches the airport name using the ICAO code."""
++    icao = input("Enter the ICAO code of the airport: ").upper()
++    if icao in airports:
++        print(f"The name of the airport with ICAO code {icao} is {airports[icao]}.")
++    else:
++        print("Airport not found.")
++def main():
++    """Main program loop to interact with the user."""
++    while True:
++        print("\nOptions:")
++        print("1. Enter a new airport")
++        print("2. Fetch an airport by ICAO code")
++        print("3. Quit")
++        choice = input("Choose an option (1/2/3): ")
++        if choice == "1":
++            add_airport()
++        elif choice == "2":
++            fetch_airport()
++        elif choice == "3":
++            print("Goodbye!")
++            break
++        else:
++            print("Invalid choice, please select 1, 2, or 3.")
++if __name__ == "__main__":
++    main()
++
+Index: new.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>'''def greet():\r\n    print(\"Hello!\")\r\n    return\r\nprint(\"A new day starts with a greeting.\")\r\ngreet()\r\nprint(\"Now we can  move to other business.\")'''\r\nfrom importlib import simple\r\n\r\n'''def greet(times):\r\n    for i in range(times):\r\n        print(\"Round\"+ str(i+1)+\"of saying hello.\")\r\n    return\r\n\r\nprint(\" A new day starts with greeting.\")\r\ngreet(5)\r\nprint(\"Let's greet some more.\")\r\ngreet(2)\r\n\r\ndef change():\r\n    city=\"Vantaa\"\r\n    print(\"At the end of the function:\"+city)\r\n    return\r\ncity=\"Helsinki\"\r\nprint(\"At the beginning in the main program:\"+city)\r\nchange()\r\nprint(\"At the end of the main program:\"+city)\r\n\r\ndef sum_of_squares(first, second):\r\n    result=first**2+second**2\r\n    return result\r\nnumber1 = float(input(\"Enter the first number: \"))\r\nnumber2 = float(input(\"Enter the second number: \"))\r\nresult=sum_of_squares(number1, number2)\r\nprint(f\"The sum of squares of numbers {number1:.1f} and {number2:.3f} is {result:.3f}\")\r\n\r\ndef inventory(items):\r\n    print(\"You have the following items:\")\r\n    for item in items:\r\n        print(\"-\" + item)\r\n    items.clear()\r\n    return\r\nbackpack=[\"Water bottle\", \"Map\",\"Compass\"]\r\ninventory(backpack)\r\nbackpack.append(\"Swiss Army Knife\")\r\ninventory(backpack)\r\n\r\nuser=input(\"Enter your name: \")\r\nwhile username != \"Stop\"\r\n    print(\"username\")\r\n    username=input(\"Enter your name: \")\r\n\r\nnumber = 1\r\nwhile number<5:\r\n    print(number)\r\nprint(\"All Ready.\")\r\n\r\nimport random\r\ndice1 = dice2 = rolls = 0\r\nwhile (dice1!=6 or dice2!=6):\r\n    dice1 = random.randint(1,6)\r\n    dice2 = random.randint(1,6)\r\n    rolls = rolls + 1\r\nprint(f\"Rolled{rolls:d} times.\")\r\n\r\nimport random\r\nrounds = 0\r\ntotal_rolls = 0\r\nwhile rounds < 10000:\r\n    dice1 = dice2 = rolls = 0\r\n    while (dice1 != 6 or dice2 != 6):\r\n        dice1 = random.randint(1, 6)\r\n        dice2 = random.randint(1, 6)\r\n        rolls = rolls + 1\r\n    print(f\"Rolled{rolls:d} times.\")\r\n    rounds = rounds + 1\r\n    total_rolls = total_rolls + rolls\r\naverage_rolls = total_rolls/rounds\r\nprint(f\"Average rolls required: {average_rolls:.2f}\")\r\n\r\nfirst = 2\r\nwhile first <= 5:\r\n    second = 4\r\n    while second <= 5:\r\n        print(f\"{first} times{second} is {first*second}\")\r\n        second = second + 1\r\n        first = first + 1\r\n\r\n\r\ncommand = input(\"Enter command: \")\r\nwhile command != \"exit\":\r\n    if command == \"MAYDAY\":\r\n        break\r\n    print(\"Executing command:\" + command)\r\n    command = input(\"Enter command: \")\r\nelse:\r\n    print(\"Goodbye.\")\r\nprint(\"Execution stopped.\")'''\r\n\r\n\r\ndef calculate_simple_interest(principal, interest, rate):\r\n    simple_interest = principal * interest * rate\r\n    return simple interest\r\ndef calculate_compound_interest(principal, interest, rate):\r\n    amount = principal * (1 + rate/100) ** rate\r\n    compound_interest = amount - principal\r\n    return compound_interest\r\nprincipal = input(\"Enter principal: \")\r\ninterest = input(\"Enter interest: \")\r\nrate = input(\"Enter rate: \")\r\ntime = input(\"Enter time: \")\r\nprint(f\"Simple Interest: {simple_interest}\")\r\nprint(f\"Compound Interest: {compund_interest}\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/new.py b/new.py
+--- a/new.py	(revision 33f891cc835b8f9ccd8ce240984e2a665bd6a115)
++++ b/new.py	(date 1726839880361)
+@@ -1,112 +1,64 @@
+-'''def greet():
+-    print("Hello!")
+-    return
+-print("A new day starts with a greeting.")
+-greet()
+-print("Now we can  move to other business.")'''
+-from importlib import simple
+-
+-'''def greet(times):
+-    for i in range(times):
+-        print("Round"+ str(i+1)+"of saying hello.")
+-    return
+-
+-print(" A new day starts with greeting.")
+-greet(5)
+-print("Let's greet some more.")
+-greet(2)
+-
+-def change():
+-    city="Vantaa"
+-    print("At the end of the function:"+city)
+-    return
+-city="Helsinki"
+-print("At the beginning in the main program:"+city)
+-change()
+-print("At the end of the main program:"+city)
+-
+-def sum_of_squares(first, second):
+-    result=first**2+second**2
+-    return result
+-number1 = float(input("Enter the first number: "))
+-number2 = float(input("Enter the second number: "))
+-result=sum_of_squares(number1, number2)
+-print(f"The sum of squares of numbers {number1:.1f} and {number2:.3f} is {result:.3f}")
+-
+-def inventory(items):
+-    print("You have the following items:")
+-    for item in items:
+-        print("-" + item)
+-    items.clear()
+-    return
+-backpack=["Water bottle", "Map","Compass"]
+-inventory(backpack)
+-backpack.append("Swiss Army Knife")
+-inventory(backpack)
+-
+-user=input("Enter your name: ")
+-while username != "Stop"
+-    print("username")
+-    username=input("Enter your name: ")
+-
+-number = 1
+-while number<5:
+-    print(number)
+-print("All Ready.")
+ 
+-import random
+-dice1 = dice2 = rolls = 0
+-while (dice1!=6 or dice2!=6):
+-    dice1 = random.randint(1,6)
+-    dice2 = random.randint(1,6)
+-    rolls = rolls + 1
+-print(f"Rolled{rolls:d} times.")
++seasons = ("Winter", "Spring", "Summer", "Autumn")
++month = int(input("Enter the number of the month (1-12): "))
++if month in [12, 1, 2]:
++    season = seasons[0]  # Winter
++elif month in [3, 4, 5]:
++    season = seasons[1]  # Spring
++elif month in [6, 7, 8]:
++    season = seasons[2]  # Summer
++elif month in [9, 10, 11]:
++    season = seasons[3]  # Autumn
++else:
++    season = "Invalid month number"
++print(f"The season is: {season}")
+ 
+-import random
+-rounds = 0
+-total_rolls = 0
+-while rounds < 10000:
+-    dice1 = dice2 = rolls = 0
+-    while (dice1 != 6 or dice2 != 6):
+-        dice1 = random.randint(1, 6)
+-        dice2 = random.randint(1, 6)
+-        rolls = rolls + 1
+-    print(f"Rolled{rolls:d} times.")
+-    rounds = rounds + 1
+-    total_rolls = total_rolls + rolls
+-average_rolls = total_rolls/rounds
+-print(f"Average rolls required: {average_rolls:.2f}")
+ 
+-first = 2
+-while first <= 5:
+-    second = 4
+-    while second <= 5:
+-        print(f"{first} times{second} is {first*second}")
+-        second = second + 1
+-        first = first + 1
+ 
+-
+-command = input("Enter command: ")
+-while command != "exit":
+-    if command == "MAYDAY":
++names_set = set()
++while True:
++    name = input("Enter a name (or press Enter to stop): ")
++    if name == "":
+         break
+-    print("Executing command:" + command)
+-    command = input("Enter command: ")
+-else:
+-    print("Goodbye.")
+-print("Execution stopped.")'''
++    if name in names_set:
++        print("Existing name")
++    else:
++        print("New name")
++        names_set.add(name)
++print("\nNames entered:")
++for name in names_set:
++    print(name)
++
+ 
+ 
+-def calculate_simple_interest(principal, interest, rate):
+-    simple_interest = principal * interest * rate
+-    return simple interest
+-def calculate_compound_interest(principal, interest, rate):
+-    amount = principal * (1 + rate/100) ** rate
+-    compound_interest = amount - principal
+-    return compound_interest
+-principal = input("Enter principal: ")
+-interest = input("Enter interest: ")
+-rate = input("Enter rate: ")
+-time = input("Enter time: ")
+-print(f"Simple Interest: {simple_interest}")
+-print(f"Compound Interest: {compund_interest}")
++    airport_data = {}
++
++    while True:
++        # Display the menu of options
++        print("\nMenu:")
++        print("1. Enter a new airport")
++        print("2. Fetch airport information")
++        print("3. Quit")
++        choice = input("Choose an option (1-3): ")
++        if choice == "1":
++            icao_code = input("Enter the ICAO code of the airport: ").upper()  # Ensure ICAO code is uppercase
++            airport_name = input("Enter the name of the airport: ")
++            if icao_code in airport_data:
++                print("This ICAO code is already in the system.")
++            else:
++                airport_data[icao_code] = airport_name
++                print(f"Airport {airport_name} with ICAO code {icao_code} added.")
++        elif choice == "2":
++            icao_code = input("Enter the ICAO code of the airport to fetch: ").upper()
++            if icao_code in airport_data:
++                print(f"The airport name for ICAO code {icao_code} is: {airport_data[icao_code]}")
++            else:
++                print("No airport found with that ICAO code.")
++        elif choice == "3":
++            print("Exiting the program. Goodbye!")
++            break
++        else:
++            print("Invalid choice. Please select 1, 2, or 3.")
++
++
++
