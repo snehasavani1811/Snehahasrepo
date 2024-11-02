@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b3521f-b6ea-459c-ba13-94647200e96c" name="Changes" comment="assignment 6">
+    <list default="true" id="d7b3521f-b6ea-459c-ba13-94647200e96c" name="Changes" comment="Ass 7">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_09__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_16_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_16__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_20_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_20__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_23_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_23__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_35_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_35__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_45_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20-09-2024_16_45__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26-09-2024_19_49_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26-09-2024_19_49__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ass4.py" beforeDir="false" afterPath="$PROJECT_DIR$/ass4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/new.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +101,10 @@
       <workItem from="1726604345118" duration="39000" />
       <workItem from="1726642851991" duration="996000" />
       <workItem from="1726647794030" duration="17559000" />
-      <workItem from="1727367331727" duration="5084000" />
+      <workItem from="1727367331727" duration="37383000" />
+      <workItem from="1728996480562" duration="336000" />
+      <workItem from="1729851407421" duration="7829000" />
+      <workItem from="1730222737552" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="ass4">
       <option name="closed" value="true" />
@@ -415,7 +434,71 @@
       <option name="project" value="LOCAL" />
       <updated>1727420709800</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="assignment 6.0">
+      <option name="closed" value="true" />
+      <created>1727421028746</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1727421028746</updated>
+    </task>
+    <task id="LOCAL-00043" summary="assignment 6.0">
+      <option name="closed" value="true" />
+      <created>1727421056327</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1727421056327</updated>
+    </task>
+    <task id="LOCAL-00044" summary="assignment 6.0">
+      <option name="closed" value="true" />
+      <created>1727421171949</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1727421171949</updated>
+    </task>
+    <task id="LOCAL-00045" summary="assignment 6.0">
+      <option name="closed" value="true" />
+      <created>1727421189924</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1727421189925</updated>
+    </task>
+    <task id="LOCAL-00046" summary="class">
+      <option name="closed" value="true" />
+      <created>1727438252356</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1727438252356</updated>
+    </task>
+    <task id="LOCAL-00047" summary="class">
+      <option name="closed" value="true" />
+      <created>1727438271588</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1727438271588</updated>
+    </task>
+    <task id="LOCAL-00048" summary="class">
+      <option name="closed" value="true" />
+      <created>1727440089425</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1727440089425</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Ass 7">
+      <option name="closed" value="true" />
+      <created>1727976300426</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1727976300426</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,15 +515,29 @@
     <MESSAGE value="sept20_15" />
     <MESSAGE value="ass 5" />
     <MESSAGE value="Update new.py" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="assignment" />
     <MESSAGE value="ass 6" />
     <MESSAGE value="assignment 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 6" />
+    <MESSAGE value="assignment 6.0" />
+    <MESSAGE value="class" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="Ass 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ass 7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/new.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Snehahasrepo$new.coverage" NAME="new Coverage Results" MODIFIED="1727368973628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Snehahasrepo$ass4.coverage" NAME="ass4 Coverage Results" MODIFIED="1727371784704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snehahasrepo$new.coverage" NAME="new Coverage Results" MODIFIED="1730567545981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snehahasrepo$ass4.coverage" NAME="ass4 Coverage Results" MODIFIED="1730570960748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Snehahasrepo$Ass4.coverage" NAME="Ass4 Coverage Results" MODIFIED="1726649193261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
