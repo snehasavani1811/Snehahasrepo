@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b3521f-b6ea-459c-ba13-94647200e96c" name="Changes" comment="AI-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ass4.py" beforeDir="false" afterPath="$PROJECT_DIR$/ass4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,15 +88,7 @@
       <workItem from="1727367331727" duration="37383000" />
       <workItem from="1728996480562" duration="336000" />
       <workItem from="1729851407421" duration="7829000" />
-      <workItem from="1730222737552" duration="5108000" />
-    </task>
-    <task id="LOCAL-00002" summary="ass4">
-      <option name="closed" value="true" />
-      <created>1726649052252</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1726649052252</updated>
+      <workItem from="1730222737552" duration="5888000" />
     </task>
     <task id="LOCAL-00003" summary="ass4">
       <option name="closed" value="true" />
@@ -483,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730571267848</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="AI-1">
+      <option name="closed" value="true" />
+      <created>1730667464255</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1730667464262</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,9 +505,9 @@
     <MESSAGE value="assignment 6.0" />
     <MESSAGE value="class" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
-    <MESSAGE value="AI-1" />
     <MESSAGE value="Ass 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ass 7" />
+    <MESSAGE value="AI-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
