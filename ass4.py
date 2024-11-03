@@ -1,4 +1,4 @@
-'''
+
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.linspace(-10, 10, 400)
@@ -29,7 +29,7 @@ plt.xlabel("x")
 plt.ylabel("y")
 plt.grid(True)
 plt.show()
-'''
+
 
 
 import numpy as np
@@ -56,3 +56,24 @@ if A_inv is not None:
     print(identity_1)
     print("\nProduct of A_inv and A (should be identity):")
     print(identity_2)
+
+
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+data = pd.read_csv('/path/to/weight-height.csv')
+length_in = data['Length'].to_numpy()
+weight_lb = data['Weight'].to_numpy()
+length_cm = length_in * 2.54
+weight_kg = weight_lb * 0.453592
+mean_length = np.mean(length_cm)
+mean_weight = np.mean(weight_kg)
+print(f"Mean Length (cm): {mean_length}")
+print(f"Mean Weight (kg): {mean_weight}")
+plt.hist(length_cm, bins=20, color='skyblue', edgecolor='black')
+plt.xlabel('Length (cm)')
+plt.ylabel('Frequency')
+plt.title('Histogram of Lengths')
+plt.show()
