@@ -1,88 +1,119 @@
-
+'''import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
-x = np.linspace(-10, 10, 400)
-y1 = 2 * x + 1
-y2 = 2 * x + 2
-y3 = 2 * x + 3
+
+file_path = 'weight-height.csv'
+data = pd.read_csv(file_path)
+
 plt.figure(figsize=(8, 6))
-plt.plot(x, y1, linestyle='-', color='black', label='y = 2x + 1')
-plt.plot(x, y2, linestyle='--', color='blue', label='y = 2x + 2')
-plt.plot(x, y3, linestyle='-.', color='green', label='y = 2x + 3')
-plt.title("Graphs of y = 2x + 1, y = 2x + 2, and y = 2x + 3")
-plt.xlabel("x-axis")
-plt.ylabel("y-axis")
-plt.legend()
-plt.grid(True)
+plt.scatter(data['Height'], data['Weight'], alpha=0.5, color='red')
+plt.title('Scatter Plot of Height vs Weight', fontsize=14)
+plt.xlabel('Height (inches)', fontsize=12)
+plt.ylabel('Weight (pounds)', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.7)
 plt.show()
 
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-x = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-y = np.array([-0.57, -2.57, -4.80, -7.36, -8.78, -10.52, -12.85, -14.69, -16.78])
-plt.figure(figsize=(8, 6))
-plt.scatter(x, y, marker='+', color='blue')
-plt.title("Scatter Plot of Points (x, y)")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.grid(True)
-plt.show()
 
-
-
-import numpy as np
-A = np.array([
-    [1, 2, 3],
-    [0, 1, 4],
-    [5, 6, 0]
-])
-
-try:
-    A_inv = np.linalg.inv(A)
-except np.linalg.LinAlgError:
-    print("Matrix A is singular and cannot be inverted.")
-    A_inv = None
-
-if A_inv is not None:
-    identity_1 = np.dot(A, A_inv)
-    identity_2 = np.dot(A_inv, A)
-    print("Matrix A:")
-    print(A)
-    print("\nInverse of A (A_inv):")
-    print(A_inv)
-    print("\nProduct of A and A_inv (should be identity):")
-    print(identity_1)
-    print("\nProduct of A_inv and A (should be identity):")
-    print(identity_2)
-
-
-
-
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
 
-data = pd.read_csv("weight-height.csv")
+file_path = 'weight-height.csv'
+data = pd.read_csv(file_path)
 
-height_inches = data['Height']
-weight_pounds = data['Weight']
+X = data[['Height']]
+y = data['Weight']
 
-height_cm = height_inches * 2.54
-
-weight_kg = weight_pounds * 0.453592
-
-mean_height_cm = np.mean(height_cm)
-mean_weight_kg = np.mean(weight_kg)
-
-print(f"Mean Height (cm): {mean_height_cm}")
-print(f"Mean Weight (kg): {mean_weight_kg}")
-
-plt.figure(figsize=(8, 5))
-plt.hist(height_cm, bins=20, color="skyblue", edgecolor="black")
-plt.title("Histogram of Heights (in cm)")
-plt.xlabel("Height (cm)")
-plt.ylabel("Frequency")
-plt.grid(True)
+model = LinearRegression()
+model.fit(X, y)
+y_pred = model.predict(X)
+r2 = r2_score(y, y_pred)
+slope = model.coef_[0]
+intercept = model.intercept_
+print(f"Linear Regression Model: Weight = {slope:.3f} * Height + {intercept:.3f}")
+print(f"R^2 Score: {r2:.3f}")
+plt.figure(figsize=(8, 6))
+plt.scatter(data['Height'], data['Weight'], alpha=0.5, label='Data Points')
+plt.plot(data['Height'], y_pred, color='red', linewidth=2, label='Regression Line')
+plt.title('Height vs Weight with Regression Line', fontsize=14)
+plt.xlabel('Height (inches)', fontsize=12)
+plt.ylabel('Weight (pounds)', fontsize=12)
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
 plt.show()
+
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+file_path = 'weight-height.csv'
+data = pd.read_csv(file_path)
+
+X = data[['Height']]
+y = data['Weight']
+
+model = LinearRegression()
+model.fit(X, y)
+y_pred = model.predict(X)
+slope = model.coef_[0]
+intercept = model.intercept_
+r2 = r2_score(y, y_pred)
+print(f"Linear Regression Model: Weight = {slope:.3f} * Height + {intercept:.3f}")
+print(f"R^2 Score: {r2:.3f}")
+
+plt.figure(figsize=(8, 6))
+plt.scatter(data['Height'], data['Weight'], alpha=0.5, color='blue', label='Data Points')
+plt.plot(data['Height'], y_pred, color='red', linewidth=2, label=f'Regression Line\n(Weight = {slope:.2f} * Height + {intercept:.2f})')
+plt.title('Height vs Weight with Regression Line', fontsize=14)
+plt.xlabel('Height (inches)', fontsize=12)
+plt.ylabel('Weight (pounds)', fontsize=12)
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+file_path = 'weight-height.csv'
+data = pd.read_csv(file_path)
+X = data[['Height']]
+y = data['Weight']
+model = LinearRegression()
+model.fit(X, y)
+y_pred = model.predict(X)
+plt.figure(figsize=(8, 6))
+plt.scatter(data['Height'], data['Weight'], alpha=0.5, color='blue', label='Data Points')
+slope = model.coef_[0]
+intercept = model.intercept_
+plt.plot(data['Height'], y_pred, color='red', linewidth=2, label=f'Regression Line\n(Weight = {slope:.2f} * Height + {intercept:.2f})')
+
+plt.title('Height vs Weight with Regression Line', fontsize=14)
+plt.xlabel('Height (inches)', fontsize=12)
+plt.ylabel('Weight (pounds)', fontsize=12)
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.show()
+'''
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+import numpy as np
+
+file_path = 'weight-height.csv'
+data = pd.read_csv(file_path)
+X = data[['Height']]
+y = data['Weight']
+model = LinearRegression()
+model.fit(X, y)
+y_pred = model.predict(X)
+rmse = np.sqrt(mean_squared_error(y, y_pred))
+r2 = r2_score(y, y_pred)
+print(f"Root Mean Square Error (RMSE): {rmse:.3f}")
+print(f"R^2 Score: {r2:.3f}")
+
