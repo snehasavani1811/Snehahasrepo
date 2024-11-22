@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b3521f-b6ea-459c-ba13-94647200e96c" name="Changes" comment="AI-1">
+    <list default="true" id="d7b3521f-b6ea-459c-ba13-94647200e96c" name="Changes" comment="AI-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ass4.py" beforeDir="false" afterPath="$PROJECT_DIR$/ass4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/new.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,23 +90,15 @@
       <workItem from="1727367331727" duration="37383000" />
       <workItem from="1728996480562" duration="336000" />
       <workItem from="1729851407421" duration="7829000" />
-      <workItem from="1730222737552" duration="5888000" />
-    </task>
-    <task id="LOCAL-00003" summary="ass4">
-      <option name="closed" value="true" />
-      <created>1726649269079</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1726649269079</updated>
-    </task>
-    <task id="LOCAL-00004" summary="ass4">
-      <option name="closed" value="true" />
-      <created>1726649338153</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1726649338153</updated>
+      <workItem from="1730222737552" duration="6226000" />
+      <workItem from="1731053807575" duration="13939000" />
+      <workItem from="1731664397790" duration="473000" />
+      <workItem from="1731666000798" duration="25000" />
+      <workItem from="1731666064079" duration="12034000" />
+      <workItem from="1731767816146" duration="107000" />
+      <workItem from="1731768008316" duration="77000" />
+      <workItem from="1732098993925" duration="75000" />
+      <workItem from="1732266563074" duration="10944000" />
     </task>
     <task id="LOCAL-00005" summary="sept20_10">
       <option name="closed" value="true" />
@@ -482,7 +476,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730667464262</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="AI-1">
+      <option name="closed" value="true" />
+      <created>1730668722664</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1730668722666</updated>
+    </task>
+    <task id="LOCAL-00053" summary="AI-3">
+      <option name="closed" value="true" />
+      <created>1731692437433</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1731692437433</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,22 +517,22 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="Ass 7" />
     <MESSAGE value="AI-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="AI-1" />
+    <MESSAGE value="AI-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/new.py</url>
-          <line>25</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Snehahasrepo$new.coverage" NAME="new Coverage Results" MODIFIED="1730567545981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Snehahasrepo$ass4.coverage" NAME="ass4 Coverage Results" MODIFIED="1730667259736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snehahasrepo$new.coverage" NAME="new Coverage Results" MODIFIED="1732282245077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snehahasrepo$ass4.coverage" NAME="ass4 Coverage Results" MODIFIED="1732292630151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Snehahasrepo$Ass4.coverage" NAME="Ass4 Coverage Results" MODIFIED="1726649193261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
