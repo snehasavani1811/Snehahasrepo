@@ -1,4 +1,4 @@
-'''import pandas as pd
+import pandas as pd
 file_path = 'data_banknote_authentication.csv'
 data = pd.read_csv(file_path)
 print("First 5 rows of the dataset:")
@@ -76,16 +76,9 @@ print("\nClassification Report (RBF Kernel):")
 print(classification_report(y_test, y_pred_rbf))
 
 
-Predict on the testing data and compute the confusion matrix and classification report
-y_pred_rbf = svc_rbf.predict(X_test)
-conf_matrix_rbf = confusion_matrix(y_test, y_pred_rbf)
-class_report_rbf = classification_report(y_test, y_pred_rbf)
-print("Linear Kernel SVM:")
-print("Confusion Matrix:\n", conf_matrix_linear)
-print("Classification Report:\n", class_report_linear)
-print("\nRBF Kernel SVM:")
-print("Confusion Matrix:\n", conf_matrix_rbf)
-print("Classification Report:\n", class_report_rbf)
+"""Using RBF Kernel SVM in this case is best since it gets perfect accuracy, precision, recall, and f1-score. This makes it an extremely effective
+model for this particular dataset. In addition, the Linear Kernel SVM gives
+very strong results too, albeit with a minor decrease in performance compared to RBF kernel. Comparison of these two models depends upon the linear separable data feature and whether computational efficiency is a priority."""
 
 
 
@@ -237,7 +230,7 @@ r2_standardized = r2_score(y_test, y_pred_standardized)
 print("Comparison of Models in Terms of R2 Values:")
 print(f"Unscaled Data: R2 = {r2_unscaled:.4f}")
 print(f"Normalized Data: R2 = {r2_normalized:.4f}")
-print(f"Standardized Data: R2 = {r2_standardized:.4f}")'''
+print(f"Standardized Data: R2 = {r2_standardized:.4f}")
 
 
 
